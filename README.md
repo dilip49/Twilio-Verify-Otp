@@ -1,26 +1,24 @@
 # README
+This app shows how we can implement otp based code verification using ruby on rails.
+I have used two gems to implement the feature-
+* gem 'authy'
+* gem 'twilio-ruby', '~>5.0.0'
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
+- Ruby version
+  * 2.6.5
 * System dependencies
-
+   * Ruby 2.6.5
+   * Rails 5.2.4
 * Configuration
-
+  ```bash
+  gem install bundler && bundle install
+  ``` 
 * Database creation
-
-* Database initialization
-
+  No need to setup db. The app contains default sqlite3 database.
+  ```bash
+  rails db:migrate 
+  ``` 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-"# verify-message" 
-"# verify-message" 
+  ```bash
+  bundle exec rspec
+  ```
